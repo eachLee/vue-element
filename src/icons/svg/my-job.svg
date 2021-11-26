@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>我的工作台@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6F9FFF" offset="0%"></stop>
+            <stop stop-color="#3D7EFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#3D7EFF" offset="0%"></stop>
+            <stop stop-color="#6F9FFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="蓝色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CCHR首页左导展开" transform="translate(-15.000000, -218.000000)" fill-rule="nonzero">
+            <g id="左导展开" transform="translate(0.000000, 50.000000)">
+                <g id="我的工作台" transform="translate(15.000000, 167.000000)">
+                    <g transform="translate(0.000000, 1.000000)">
+                        <path d="M4.62114081,4.3373494 C4.62114081,6.73280132 6.56303828,8.6746988 8.95849021,8.6746988 C11.3539421,8.6746988 13.2958396,6.73280132 13.2958396,4.3373494 C13.2958396,1.94189747 11.3539421,0 8.95849021,0 C6.56303828,0 4.62114081,1.94189747 4.62114081,4.3373494 L4.62114081,4.3373494 Z M17.9002071,18.9759036 C17.9029179,18.8858951 17.9042733,18.7956325 17.9042733,18.7048193 C17.9042733,14.9871517 15.6363775,11.7992211 12.4088432,10.4486705 L8.95849021,17.3493976 L5.50813724,10.4486705 C2.28060288,11.7992211 0.0127070783,14.9871729 0.0127070783,18.7048193 C0.0127070783,18.7956325 0.0140625,18.8858951 0.0167733434,18.9759036 L17.9002071,18.9759036 Z" id="形状" fill="url(#linearGradient-1)"></path>
+                        <polygon id="路径" fill="url(#linearGradient-2)" opacity="0.5" points="7.54478539 9.87344221 10.4228963 9.87344221 9.77364928 11.1665145 10.4228963 12.6482445 9.00891613 15.764359 7.54506071 12.6482445 8.14144625 11.1667686"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>vue-element-adminstrator</title>
+</head>
+
+<body class="bb">
+  <noscript>
+    <strong>We're sorry but vue-element-adminstrator doesn't work properly without JavaScript enabled. Please enable it
+      to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+<script type="text/javascript" src="http://monitor.centaline.com.cn/static/js/monitor.fetch.min.js?v=时间戳" ></script>
+<script>
+function loadScript(url, callback){
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    if (script.readyState){ //IE
+        script.onreadystatechange = function(){
+            if (script.readyState == "loaded" ||
+                script.readyState == "complete"){
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+    } else {//加载
+        script.onload = function(){
+            callback();//加载成功的回调
+        };
+    }
+    script.src = url;
+    document.body.appendChild(script);
+}
+//执行异步加载js
+console.log(document.readyState);
+document.addEventListener('ready',function(){
+  loadScript("http://monitor.centaline.com.cn/static/js/monitor.fetch.min.js",function(){
+    console.log("加载download.js成功！");
+  });
+})
+
+</script>
+</html>

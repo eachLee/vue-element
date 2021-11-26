@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>导入导出@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6F9FFF" offset="0%"></stop>
+            <stop stop-color="#3D7EFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#6F9FFF" offset="0%"></stop>
+            <stop stop-color="#3D7EFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="蓝色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CCHR首页左导展开" transform="translate(-15.000000, -566.000000)">
+            <g id="左导展开" transform="translate(0.000000, 50.000000)">
+                <g id="导入导出" transform="translate(15.000000, 515.000000)">
+                    <g transform="translate(0.000000, 1.000000)">
+                        <rect id="矩形" opacity="0.822591146" x="0" y="0.307283433" width="18" height="17.5909091"></rect>
+                        <rect id="矩形" fill="url(#linearGradient-1)" x="0.672738283" y="1.65364172" width="16.6545234" height="16.2445508" rx="2"></rect>
+                        <rect id="矩形" fill="url(#linearGradient-2)" opacity="0.5" x="3.05088397" y="0.307283433" width="11.8982321" height="3.29545455" rx="1.64772727"></rect>
+                        <g id="编组-8" transform="translate(3.486018, 4.968472)" fill="#FFFFFF" opacity="0.699999988">
+                            <rect id="矩形" transform="translate(4.000000, 5.139389) rotate(-270.000000) translate(-4.000000, -5.139389) " x="-0.539675972" y="4.38938864" width="9.07935194" height="1.5" rx="0.75"></rect>
+                            <rect id="矩形备份-6" transform="translate(2.931214, 2.369240) rotate(-45.000000) translate(-2.931214, -2.369240) " x="0.669723327" y="1.61924018" width="4.52298216" height="1.5" rx="0.75"></rect>
+                        </g>
+                        <g id="编组-8备份" transform="translate(11.554947, 9.968472) rotate(-180.000000) translate(-11.554947, -9.968472) translate(8.554947, 4.968472)" fill="#FFFFFF" opacity="0.699999988">
+                            <rect id="矩形" transform="translate(4.000000, 5.139389) rotate(-270.000000) translate(-4.000000, -5.139389) " x="-0.539675972" y="4.38938864" width="9.07935194" height="1.5" rx="0.75"></rect>
+                            <rect id="矩形备份-6" transform="translate(2.931214, 2.369240) rotate(-45.000000) translate(-2.931214, -2.369240) " x="0.669723327" y="1.61924018" width="4.52298216" height="1.5" rx="0.75"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

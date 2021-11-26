@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>首页@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6F9FFF" offset="0%"></stop>
+            <stop stop-color="#3D7EFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#3D7EFF" offset="0%"></stop>
+            <stop stop-color="#6F9FFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="蓝色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CCHR-左导-HR管理平台-架构备份" transform="translate(-21.000000, -66.000000)">
+            <g id="左导">
+                <g id="首页" transform="translate(21.000000, 65.000000)">
+                    <g>
+                        <rect id="矩形" fill="#D8D8D8" opacity="0" x="0" y="1.30728343" width="18" height="18"></rect>
+                        <g id="建筑" transform="translate(0.000000, 0.500000)">
+                            <g id="编组-4" transform="translate(0.000000, 0.841245)">
+                                <path d="M1.44,-4.97379915e-14 L12.6,-4.97379915e-14 C13.39529,-4.97379915e-14 14.04,0.612526417 14.04,1.36811604 L14.04,16.7594215 C14.04,17.1372163 13.717645,17.4434796 13.32,17.4434796 L0.72,17.4434796 C0.32235498,17.4434796 -1.86517468e-14,17.1372163 -1.86517468e-14,16.7594215 L-1.86517468e-14,1.36811604 C-1.86517468e-14,0.612526417 0.64470996,-4.97379915e-14 1.44,-4.97379915e-14 Z" id="圆角矩形_1" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+                                <path d="M7.49247416,3.36508695 L8.87444017,6.12901897 C9.12142942,6.62299747 8.92120507,7.22367051 8.42722657,7.47065976 C8.28837114,7.54008747 8.13525807,7.57623256 7.98001298,7.57623256 L5.21608095,7.57623256 C4.6637962,7.57623256 4.21608095,7.12851731 4.21608095,6.57623256 C4.21608095,6.42098747 4.25222605,6.2678744 4.32165376,6.12901897 L5.70361977,3.36508695 C5.95060902,2.87110845 6.55128206,2.6708841 7.04526056,2.91787335 C7.23878796,3.01463705 7.39571045,3.17155954 7.49247416,3.36508695 Z" id="三角形" fill="#FFFFFF" opacity="0.5"></path>
+                                <path d="M11.52,7.92 L16.56,7.92 C17.35529,7.92 18,8.50811131 18,9.23358339 L18,16.7866879 C18,17.1494239 17.677645,17.4434796 17.28,17.4434796 L10.8,17.4434796 C10.402355,17.4434796 10.08,17.1494239 10.08,16.7866879 L10.08,9.23358339 C10.08,8.50811131 10.72471,7.92 11.52,7.92 Z" id="圆角矩形_1_拷贝_2" fill="url(#linearGradient-2)" fill-rule="nonzero" opacity="0.5"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
