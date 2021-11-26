@@ -2,16 +2,19 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import Axios from 'axios'
 import Element from 'element-ui'
 import '@/assets/styles/element-variables.scss'
 import '@/assets/styles/index.scss'
 import '@/assets/styles/base-layout.scss'
+//引入Mock数据
+require('./mock')
 
 import './icons' // icon
 import './router/permission'
 
 Vue.use(Element)
-
+Vue.prototype.$axios = Axios;
 Vue.config.productionTip = false
 Vue.directive('real-img', async function (el, binding) {
   //指令名称为：real-img   //检测图片是否存在

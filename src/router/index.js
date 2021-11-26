@@ -44,6 +44,7 @@ export const constantRoutes = [
     component: () =>
       import(/* webpackChunkName: "home-group" */ "@/views/login/index")
   },
+  //以上为基础模板不能删除
   {
     path: "/",
     component: Layout,
@@ -90,8 +91,13 @@ export const constantRoutes = [
       }
     ]
   },
-  //以上为基础模板不能删除
-
+  {
+    path: "/search-form/",
+    name: "SEARCH_FORM",
+    hidden: true,
+    meta: { icon: "home", title: "查询区域", },
+    component: () => import("@/views/search-form")
+  },
 ];
 export const asyncRoutes = [
   // {
