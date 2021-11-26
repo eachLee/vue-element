@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>小微解除@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-31.6%" y="-52.2%" width="163.2%" height="204.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.452477134   0 0 0 0 0.8603258   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#C1EFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="蓝色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CCHR-左导-HR管理平台-人事架构事务" transform="translate(-293.000000, -317.000000)">
+            <g id="1备份-6" transform="translate(70.000000, 299.000000)">
+                <g id="1备份" transform="translate(208.000000, 0.000000)">
+                    <g id="小微解除" transform="translate(15.000000, 18.000000)">
+                        <circle id="椭圆形" fill="#80DBFA" opacity="0.800000012" cx="27" cy="27" r="27"></circle>
+                        <g id="入职" transform="translate(7.000000, 9.000000)">
+                            <g id="logo小" filter="url(#filter-1)" transform="translate(19.564533, 21.473901) rotate(-360.000000) translate(-19.564533, -21.473901) translate(0.564533, 9.973901)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+                                <path d="M37.970785,-7.1942452e-13 L27.1943462,17.2738974 L24.2223687,22.0143913 L21.302,17.356 L21.3028595,17.3575879 L21.2503911,17.2738974 L18.322,12.58 L13.113,4.231 L8.637,4.231 L13.7484165,12.5565279 L15.5274909,9.66798274 L18.5171892,14.3982121 L16.6778707,17.3421516 L13.7484165,22.0143913 L10.7764389,17.2738974 L2.55795385e-12,-6.55475674e-13 L16.514557,-3.49942297e-13 L24.2223687,12.5565279 L29.321,4.276 L24.8571912,4.23613893 L22.4894065,8.03599729 L19.4676016,3.25298537 L20.895,0.95 L21.4803905,-6.55475674e-13 L37.970785,-7.1942452e-13 Z" id="形状结合"></path>
+                            </g>
+                            <g id="编组-2" transform="translate(11.000000, 0.000000)" fill="#FFFFFF">
+                                <rect id="矩形" transform="translate(2.979867, 4.005692) rotate(-45.000000) translate(-2.979867, -4.005692) " x="2" y="1" width="1.95973448" height="6.0113848" rx="0.979867241"></rect>
+                                <rect id="矩形备份-12" transform="translate(14.979867, 4.005692) scale(-1, 1) rotate(-45.000000) translate(-14.979867, -4.005692) " x="14" y="1" width="1.95973448" height="6.0113848" rx="0.979867241"></rect>
+                                <rect id="矩形备份-13" transform="translate(8.979867, 3.005692) scale(-1, 1) rotate(-360.000000) translate(-8.979867, -3.005692) " x="8" y="0" width="1.95973448" height="6.0113848" rx="0.979867241"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

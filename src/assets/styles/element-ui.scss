@@ -1,0 +1,297 @@
+// cover some element-ui styles
+/*定义浏览器滚动条*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #D9D9D9;
+}
+
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+// 重置时间空间年月日默认宽度
+.el-date-editor.el-input, .el-date-editor.el-input__inner{
+  width: 135px;
+}
+//重置input，button高度样式
+.el-tabs__active-bar{
+  border-radius: 2px
+}
+.el-input{
+  height: 26px;
+  font-size: 12px;
+}
+.el-input__inner {
+  height: 26px;
+  line-height: 26px;
+  padding-left: 5px;
+}
+.el-button {
+  padding: 0 16px;
+  height: 26px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+.el-button--mini{
+  padding: 0 19px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+}
+.el-input__icon {
+  line-height: 26px;
+}
+.el-button--primary,.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #DB5055;
+}
+.el-pager li:hover,.el-pager li.active{
+  color: #DB5055;
+}
+.el-pager li{
+  height: 30px;
+  line-height: 30px;
+}
+.el-pagination.is-background .btn-prev, .el-pagination.is-background .btn-next{
+  min-height: 30px;
+}
+
+.el-form-item__label {
+  line-height: 26px;
+  font-size: 12px;
+}
+.el-form-item__content {
+  line-height: 26px;
+  font-size: 12px;
+}
+.el-select-dropdown__item{
+  font-size: 12px;
+    padding: 0 12px;
+    height: 26px;
+    line-height: 26px;
+}
+//重置表格样式
+.el-table th{
+  padding: 8px 0;
+  color: #999
+}
+ .el-table td{
+   padding: 6px 0;
+   color: #333;
+ }
+ .el-table th.is-leaf, .el-table td{
+   border-bottom: 1px solid #f0f0f0;
+ }
+ .el-table--border th:first-child .cell, .el-table--border td:first-child .cell{
+   padding: 0 15px;
+ }
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+//重置tab切换样式
+.el-tabs__item.is-active{
+  color: #db5055;
+}
+.el-form-item__label{
+  color: #666;
+}
+.el-input__inner{
+  color: #333;
+}
+// 重置button样式
+.el-button{
+  border: none;
+}
+.el-button--default{
+  border: 1px solid #dcdfe6; 
+  vertical-align: middle;
+}
+// 重置dialog样式
+.el-dialog__title{
+  font-size: 16px;
+}
+.el-dialog__header{
+  padding-bottom: 0;
+  padding: 15px;
+}
+.el-dialog__headerbtn{
+  top: 19px;
+  right: 15px;
+}
+.el-dialog__body{
+  padding: 15px;
+  border-top: 1px solid #DCDFE6;
+  border-bottom: 1px solid #DCDFE6;
+}
+.el-dialog__footer{
+  padding-bottom: 0;
+  padding: 15px;
+}
+.el-tooltip{
+  cursor: pointer;
+}
+
+ // 浮层只读样式
+.houseinfo,.read-only-see {
+  .el-form-item__label {
+    color: #999;
+  }
+  .el-form-item__content {
+    color: #333;
+    font-weight: 700;
+  }
+  .el-form-item {
+    margin-bottom: 5px;
+  }
+  
+}
+.see-title {
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  .vertical-border {
+    width: 3px;
+    height: 18px;
+    background: #db5055;
+    float: left;
+    margin: 2px 10px 0 0;
+    margin-right: 10px;
+    border-radius: 2px;
+    margin-top: 2px;
+  }
+}
+  //灰色背景分割线
+.dividing-line-gray {
+  padding-bottom: 10px;
+  background: #f0f3f6;
+  .dividing-line-white {
+    background: #fff;
+    padding: 15px;
+  }
+}
+//表格样式
+.el-table--border {
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  th, td {
+    border-right: none;
+    white-space: nowrap;
+  }
+  .svg-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  tbody tr:nth-child(even) {
+    background: #fafbfc;
+  }
+  .list-button {
+    padding: 0;
+  }
+  td{
+    padding: 7px 0;
+  }
+}
+//重置tab选中样式
+.el-tabs__item.is-active,.el-tabs__item:hover{
+  color: #DB5055;
+}
+.el-tabs__active-bar{
+  background-color: #DB5055;
+}
+//分页样式修改
+.el-pagination{
+  text-align: center;
+}
+//重置单选多选的样式
+.el-checkbox__label{
+  font-size: 12px;
+}

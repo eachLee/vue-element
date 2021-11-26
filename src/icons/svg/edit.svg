@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>编辑@2x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="蓝色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CCHR-左导-系统设置-流程设置" transform="translate(-1184.000000, -316.000000)">
+            <g id="我的代办事项" transform="translate(70.000000, 218.000000)">
+                <g id="1" transform="translate(0.000000, 91.000000)">
+                    <g id="编辑" transform="translate(1114.000000, 7.000000)">
+                        <circle id="椭圆形" fill="#FFC655" opacity="0.200000003" cx="12" cy="12" r="12"></circle>
+                        <g transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+                            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                            <path d="M7.8,4.4 L11.6,8.2 L6.46666667,13.3333333 L2.66666667,13.3333333 L2.66666667,9.53333333 L7.8,4.4 L7.8,4.4 Z M7.8,6.33333333 L4,10.1333333 L4,12 L5.86666667,12 L9.66666667,8.2 L7.8,6.33333333 L7.8,6.33333333 Z M9.6,2.66666667 L13.3333333,6.46666667 L12.2,7.6 L8.4,3.8 L9.6,2.66666667 Z" id="形状" fill="#FFC655"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

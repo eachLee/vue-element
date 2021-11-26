@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>合同变更@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-46.2%" y="-36.4%" width="192.3%" height="172.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.41246274   0 0 0 0 0.322070441   0 0 0 0 0.93786798  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D7D0FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="蓝色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CCHR-左导-HR管理平台-人事架构事务" transform="translate(-501.000000, -317.000000)">
+            <g id="1备份-6" transform="translate(70.000000, 299.000000)">
+                <g id="1备份-2" transform="translate(416.000000, 0.000000)">
+                    <g id="合同变更" transform="translate(15.000000, 18.000000)">
+                        <circle id="椭圆形" fill="#8975FE" opacity="0.800000012" cx="27" cy="27" r="27"></circle>
+                        <g id="hetongbiangeng" filter="url(#filter-1)" transform="translate(14.000000, 10.500000)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+                            <path d="M25.7232064,5.03878741 L16.1427157,14.4011334 L15.9245709,14.4011334 L12.6595511,11.1325374 L12.6595511,10.9143926 L23.1090449,0.464898768 C23.3271897,0.246753961 23.1090449,0.0286091549 22.8909001,0.0286091549 L3.29720511,0.0286091549 C1.5556228,0.0286091549 0.0321852993,1.55204665 0.0321852993,3.29362896 L0.0321852993,28.7665053 C0.0321852993,30.5080876 1.5556228,32.0315251 3.29720511,32.0315251 L22.6727553,32.0315251 C24.4143376,32.0315251 25.9378186,30.5080876 25.9378186,28.7665053 L25.9378186,5.25693222 C25.9413512,5.03878741 25.7232064,4.82064261 25.7232064,5.03878741 Z M11.5724032,12.4414063 C11.5724032,12.2232614 11.790548,12.2232614 12.0086928,12.2232614 L14.837423,15.0519916 C15.0555678,15.2701364 14.837423,15.4882813 14.6192782,15.4882813 L11.3542584,15.9245709 C11.1361136,15.9245709 11.1361136,15.9245709 11.1361136,15.7064261 L11.5724032,12.4414063 L11.5724032,12.4414063 Z M12.8776959,27.024923 L4.16978433,27.024923 C3.51534991,27.024923 3.08263644,26.5886334 3.08263644,25.9377751 C3.08263644,25.2833407 3.51892606,24.8506272 4.16978433,24.8506272 L12.8776959,24.8506272 C13.5321303,24.8506272 13.9648438,25.2869168 13.9648438,25.9377751 C13.9648438,26.3740647 13.3139855,27.024923 12.8776959,27.024923 Z M20.4984595,21.8001761 L3.95163952,21.8001761 C3.29720511,21.8001761 2.86449164,21.3638864 2.86449164,20.7130282 C2.86449164,20.0585938 3.30078125,19.6258803 3.95163952,19.6258803 L20.4984595,19.6258803 C21.1528939,19.6258803 21.5856074,20.0621699 21.5856074,20.7130282 C21.5856074,21.3674626 21.1493178,21.8001761 20.4984595,21.8001761 L20.4984595,21.8001761 Z" id="形状"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
