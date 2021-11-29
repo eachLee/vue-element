@@ -13,7 +13,7 @@ module.exports = {
   //     : process.env.port === 'test'
   //     ? '/test'
   //     : '/dev',
-  // publicPath: '/',
+  publicPath: '/vue-element',
   outputDir: 'dist', //打包地址 默认dist
   assetsDir: 'static', //放置生成的静态资源 (js、css、img、fonts) 的 (相对于 outputDir 的) 目录
   filenameHashing: true,
