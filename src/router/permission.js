@@ -13,13 +13,13 @@ router.beforeEach(async (to, from, next) => {
   NProgress.start() // 进度条start
 
   document.title = to.meta.title // 页面title
-  const accessRoutes = await store.dispatch(
-    'permission/generateRoutes',
-    'roles'
-  )
-  // 添加路由
-  router.addRoute(...accessRoutes)
-  console.log(router);
+  // const accessRoutes = await store.dispatch(
+  //   'permission/generateRoutes',
+  //   'roles'
+  // )
+  // // 添加路由
+  // router.addRoute(...accessRoutes)
+  // console.log(router);
   next()
   // if (to.path !== '/max-home') {
   //   next({ path: '/max-home' })

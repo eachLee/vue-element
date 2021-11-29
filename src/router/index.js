@@ -98,6 +98,13 @@ export const constantRoutes = [
     meta: { icon: "home", title: "查询区域", },
     component: () => import("@/views/search-form")
   },
+  {
+    path: "/get-copy/",
+    name: "GET_COPY",
+    hidden: true,
+    meta: { icon: "home", title: "复制处理", },
+    component: () => import("@/views/get-copy")
+  },
 ];
 export const asyncRoutes = [
   // {
