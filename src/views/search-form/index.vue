@@ -1,24 +1,26 @@
 <template>
-  <div>
+  <div class="search-box">
 
     <div
       v-for="item in formData"
       :key="item.id"
       class="search-item"
     >
-      <div v-if="item.type==='input'">
-        <span>{{item.name}}</span>
+      <template v-if="item.type==='input'">
+        <span class="search-label">{{item.name}}</span>
         <el-input
           :label="item.name"
           v-model="item.value"
+          :disabled="item.disabled"
           placeholder="请输入内容"
         ></el-input>
-      </div>
-      <div v-if="item.type==='select'">
-        <span>{{item.name}}</span>
+      </template>
+      <template v-if="item.type==='select'">
+        <span class="search-label">{{item.name}}</span>
         <el-select
           :label="item.name"
           v-model="item.value"
+          :disabled="item.disabled"
           placeholder="请选择"
         >
           <el-option
@@ -29,7 +31,33 @@
           >
           </el-option>
         </el-select>
-      </div>
+      </template>
+      <template v-if="item.type==='checkbox'">
+        <span class="search-label">{{item.name}}</span>
+        <el-checkbox-group v-model="item.value">
+          <el-checkbox
+            v-for="option in item.options"
+            :key="option.value"
+            :disabled="item.disabled"
+            :label="option.label"
+            :value="option.value"
+          >
+          </el-checkbox>
+        </el-checkbox-group>
+      </template>
+      <template v-if="item.type==='radio'">
+        <span class="search-label">{{item.name}}</span>
+        <el-radio-group v-model="item.value">
+          <el-radio
+            v-for="option in item.options"
+            :key="option.value"
+            :disabled="item.disabled"
+            :label="option.value"
+            :value="option.value"
+          >{{option.label}}
+          </el-radio>
+        </el-radio-group>
+      </template>
     </div>
   </div>
 </template>
@@ -50,7 +78,20 @@ export default {
       this.$axios.get('/mock/form-data').then(res => {
         console.log(res);
         if (res.status === 200) {
-          this.formData = res.data.formData;
+          this.formData = res.data.formData.sort((a, b) => {
+            if (a.type === 'select') {
+              return -1;
+            }
+            if (a.type === 'input') {
+              return -1
+            }
+            if (a.type === 'checkbox') {
+              return 1;
+            }
+            if (a.type === 'radio') {
+              return 1;
+            }
+          });
         }
       })
     }
@@ -59,7 +100,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .search-item {
-    float: left;
+  .search-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  ::v-deep .search-item {
+    margin-bottom: 14px;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    .search-label {
+      display: inline-block;
+      width: 64px;
+      // padding-right: 6px;
+    }
+    .el-input,
+    .el-checkbox-group,
+    .el-radio-group {
+      width: 160px;
+    }
   }
 </style>

@@ -10,13 +10,19 @@ let mockData = Mock.mock('/mock/form-data', 'get', {
 		last: '@LAST',
 		full: '@first @middle @last'
 	},
-	'formData|1-20': [{
+	'formData|10-50': [{
 		id() { return Math.random().toString(36).slice(2) },
-		'type|1': ['input', 'select'],
+		'type|1': ['input', 'select', 'radio', 'checkbox'],
 		'name|+1': ['城区', '片区', '楼盘', '栋座', '房号', '房源属性', '楼层', '户型', '朝向', '建筑类型', '交易类型', '排序方式', '房源编号', '产权性质', '房屋用途',],
-		'hidden|1-8': true,
+		'disabled|1-8': true,
 		'url': '@url',
-		value: '',
+		value() {
+			if (this.type === 'checkbox') {
+				return [];
+			} else {
+				return '';
+			}
+		},
 		options() {
 			if (this.type === 'input') {
 				return ''
