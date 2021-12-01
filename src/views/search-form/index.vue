@@ -78,19 +78,37 @@ export default {
       this.$axios.get('/mock/form-data').then(res => {
         console.log(res);
         if (res.status === 200) {
+          //按此顺序排序
+          let sortArr = ['input', 'select', 'checkbox', 'radio'];
+          let sortLen = sortArr.length;
           this.formData = res.data.formData.sort((a, b) => {
-            if (a.type === 'select') {
+            for (let i = 0; i < sortArr.length; i++) {
+              const ele = sortArr[i];
+              console.log(i + 1, sortLen);
+              if (a.type === ele && sortArr.slice(i + 1, sortLen).includes(b.type)) {
+                return -1;
+              }
+            }
+            if (a.type === sortArr[sortLen - 1] && b.type === sortArr[sortLen - 1]) {
               return -1;
-            }
-            if (a.type === 'input') {
-              return -1
-            }
-            if (a.type === 'checkbox') {
+            } else {
               return 1;
             }
-            if (a.type === 'radio') {
-              return 1;
-            }
+
+            // if (a.type === 'input' && sortArr.slice(1, 4).includes(b.type)) {
+            //   return -1
+            // }
+            // if (a.type === 'select' && sortArr.slice(2, 4).includes(b.type)) {
+            //   return -1;
+            // }
+            // if (a.type === 'checkbox' && sortArr.slice(3, 4).includes(b.type)) {
+            //   return -1;
+            // }
+            // if (a.type === 'radio' && b.type === 'radio') {
+            //   return -1;
+            // } else {
+            //   return 1;
+            // }
           });
         }
       })
