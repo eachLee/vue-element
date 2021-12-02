@@ -1,72 +1,67 @@
 <template>
-  <div class="search-box">
+  <div>
+    <div class="search-box">
 
-    <div
-      v-for="item in formData"
-      :key="item.id"
-      class="search-item"
-    >
-      <template v-if="item.type==='input'">
-        <span class="search-label">{{item.name}}</span>
-        <el-input
-          :label="item.name"
-          v-model="item.value"
-          :disabled="item.disabled"
-          placeholder="请输入内容"
-        ></el-input>
-      </template>
-      <template v-if="item.type==='select'">
-        <span class="search-label">{{item.name}}</span>
-        <el-select
-          :label="item.name"
-          v-model="item.value"
-          :disabled="item.disabled"
-          placeholder="请选择"
+      <div
+        v-for="item in formData"
+        :key="item.id"
+        class="search-item"
+      >
+        <InputItem
+          v-if="item.type==='input'"
+          :inputData="item"
+        ></InputItem>
+        <SelectItem
+          :selectData="item"
+          v-if="item.type==='select'"
         >
-          <el-option
-            v-for="option in item.options"
-            :key="option.value"
-            :label="option.label"
-            :value="option.value"
-          >
-          </el-option>
-        </el-select>
-      </template>
-      <template v-if="item.type==='checkbox'">
-        <span class="search-label">{{item.name}}</span>
-        <el-checkbox-group v-model="item.value">
-          <el-checkbox
-            v-for="option in item.options"
-            :key="option.value"
-            :disabled="item.disabled"
-            :label="option.label"
-            :value="option.value"
-          >
-          </el-checkbox>
-        </el-checkbox-group>
-      </template>
-      <template v-if="item.type==='radio'">
-        <span class="search-label">{{item.name}}</span>
-        <el-radio-group v-model="item.value">
-          <el-radio
-            v-for="option in item.options"
-            :key="option.value"
-            :disabled="item.disabled"
-            :label="option.value"
-            :value="option.value"
-          >{{option.label}}
-          </el-radio>
-        </el-radio-group>
-      </template>
+        </SelectItem>
+        <CheckboxItem
+          :checkboxData="item"
+          v-if="item.type==='checkbox'"
+        >
+        </CheckboxItem>
+        <RadioItem
+          :radioData="item"
+          v-if="item.type==='radio'"
+        >
+        </RadioItem>
+        <TextareaItem
+          :textareaData="item"
+          v-if="item.type==='textarea'"
+        ></TextareaItem>
+      </div>
+    </div>
+    <div v-if="tableList.length">
+      <TabelList
+        :tableData="tableList"
+        :theadData="theadList"
+      ></TabelList>
     </div>
   </div>
 </template>
 
 <script>
+import InputItem from './components/InputItem'
+import SelectItem from './components/SelectItem'
+import CheckboxItem from './components/CheckboxItem'
+import RadioItem from './components/RedioItem'
+import TextareaItem from './components/TextareaItem'
+import TabelList from './components/TableList'
 export default {
+  components: {
+    InputItem,
+    SelectItem,
+    CheckboxItem,
+    RadioItem,
+    TextareaItem,
+    TabelList,
+  },
   data() {
     return {
       formData: [],
+      tableList: [],
+      theadList: [],
     };
   },
   created() {
@@ -76,15 +71,15 @@ export default {
   methods: {
     getMockData() {
       this.$axios.get('/mock/form-data').then(res => {
-        console.log(res);
+        console.log(res.data);
         if (res.status === 200) {
+          let { formData, tableData } = res.data;
           //按此顺序排序
-          let sortArr = ['input', 'select', 'checkbox', 'radio'];
+          let sortArr = ['input', 'select', 'checkbox', 'radio', 'textarea'];
           let sortLen = sortArr.length;
-          this.formData = res.data.formData.sort((a, b) => {
+          this.formData = formData.sort((a, b) => {
             for (let i = 0; i < sortArr.length; i++) {
               const ele = sortArr[i];
-              console.log(i + 1, sortLen);
               if (a.type === ele && sortArr.slice(i + 1, sortLen).includes(b.type)) {
                 return -1;
               }
@@ -94,22 +89,9 @@ export default {
             } else {
               return 1;
             }
-
-            // if (a.type === 'input' && sortArr.slice(1, 4).includes(b.type)) {
-            //   return -1
-            // }
-            // if (a.type === 'select' && sortArr.slice(2, 4).includes(b.type)) {
-            //   return -1;
-            // }
-            // if (a.type === 'checkbox' && sortArr.slice(3, 4).includes(b.type)) {
-            //   return -1;
-            // }
-            // if (a.type === 'radio' && b.type === 'radio') {
-            //   return -1;
-            // } else {
-            //   return 1;
-            // }
           });
+          this.tableList = tableData.tableList;
+          this.theadList = tableData.theadList
         }
       })
     }
