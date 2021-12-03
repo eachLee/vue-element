@@ -23,6 +23,23 @@
         :label="item.label"
         :width="item.width"
       >
+        <template slot-scope="scope">
+          <a
+            v-if="item.isLink&&scope.row.url"
+            :href="scope.row.url"
+            target="_blank"
+          >{{scope.row.label}}</a>
+          <template v-else-if="item.isAction&&scope.row.operation">
+            <el-button
+              class="action-button"
+              type="text"
+              v-for="actionItem in scope.row.operation"
+              :key="actionItem.value"
+              @click="actionCallBack(actionItem)"
+            >{{actionItem.label}}</el-button>
+          </template>
+          <template v-else>{{scope.row[item.props]}}</template>
+        </template>
       </el-table-column>
     </div>
   </el-table>
@@ -44,13 +61,19 @@ export default {
     return {
     };
   },
-  created() {
-    console.log(this.theadData);
+  created() { },
+  methods: {
+    actionCallBack(item) {
+      this.$emit('actionFunc', item)
+    }
   }
 }
 </script>
 <style lang="scss" scoped>
   .flex {
     display: flex;
+  }
+  ::v-deep .action-button.el-button {
+    padding: 0;
   }
 </style>

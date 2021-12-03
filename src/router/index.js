@@ -92,11 +92,11 @@ export const constantRoutes = [
     ]
   },
   {
-    path: "/search-form/",
-    name: "SEARCH_FORM",
+    path: "/property/",
+    name: "PROPERTY",
     hidden: true,
-    meta: { icon: "home", title: "查询区域", },
-    component: () => import("@/views/search-form")
+    meta: { icon: "home", title: "房源列表", },
+    component: () => import("@/views/property")
   },
   {
     path: "/get-copy/",
