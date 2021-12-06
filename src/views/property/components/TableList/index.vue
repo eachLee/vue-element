@@ -2,6 +2,7 @@
   <el-table
     :data="tableData"
     border
+    v-loading="loading"
     style="width: 100%"
   >
     <div
@@ -55,6 +56,13 @@ export default {
     theadData: {
       type: Array,
       require: true,
+    },
+    loading: {
+      type: Boolean,
+      require: false,
+      default() {
+        return false
+      }
     }
   },
   data() {

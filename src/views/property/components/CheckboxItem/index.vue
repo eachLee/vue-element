@@ -5,7 +5,7 @@
       <el-checkbox
         v-for="option in checkboxData.options"
         :key="option.value"
-        :disabled="checkboxData.disabled"
+        :disabled="precondition"
         :label="option.label"
         :value="option.value"
       >
@@ -20,7 +20,14 @@ export default {
     checkboxData: {
       type: Object,
       require: true,
-    }
+    },
+    precondition: {
+      type: Boolean,
+      require: false,
+      default() {
+        return false;
+      }
+    },
   },
   data() {
     return {

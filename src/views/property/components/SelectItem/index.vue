@@ -4,7 +4,7 @@
     <el-select
       :label="selectData.name"
       v-model="selectData.value"
-      :disabled="selectData.disabled"
+      :disabled="precondition"
       placeholder="请选择"
     >
       <el-option
@@ -24,7 +24,14 @@ export default {
     selectData: {
       type: Object,
       require: true,
-    }
+    },
+    precondition: {
+      type: Boolean,
+      require: false,
+      default() {
+        return false;
+      }
+    },
   },
   data() {
     return {

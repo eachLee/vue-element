@@ -8,25 +8,30 @@
       <InputItem
         v-if="item.type==='input'"
         :inputData="item"
+        :precondition="checkPrecondition(item)"
       ></InputItem>
       <SelectItem
         :selectData="item"
         v-if="item.type==='select'"
+        :precondition="checkPrecondition(item)"
       >
       </SelectItem>
       <CheckboxItem
         :checkboxData="item"
         v-if="item.type==='checkbox'"
+        :precondition="checkPrecondition(item)"
       >
       </CheckboxItem>
       <RadioItem
         :radioData="item"
         v-if="item.type==='radio'"
+        :precondition="checkPrecondition(item)"
       >
       </RadioItem>
       <TextareaItem
         :textareaData="item"
         v-if="item.type==='textarea'"
+        :precondition="checkPrecondition(item)"
       ></TextareaItem>
     </div>
   </div>
@@ -52,6 +57,50 @@ export default {
       require: true,
       default() {
         return [];
+      }
+    }
+  },
+  computed: {
+    // checkPrecondition() {
+    //   return function (currentItem) {
+    //     if (currentItem.precondition) {
+    //       let obj = this.formData.find(item => {
+    //         if (item.name === currentItem.precondition) {
+    //           return true;
+    //         }
+    //       });
+    //       console.log(obj);
+    //       if (obj) {
+    //         if (Array.isArray(obj.value)) {
+    //           return !obj.value.length;
+    //         } else {
+    //           return obj.value === '';
+    //         }
+    //       }
+    //     } else {
+    //       return false;
+    //     }
+    //   }
+    // }
+  },
+  methods: {
+    checkPrecondition(currentItem) {
+      if (currentItem.precondition) {
+        let obj = this.formData.find(item => {
+          if (item.name === currentItem.precondition) {
+            return true;
+          }
+        });
+        console.log(currentItem.precondition);
+        if (obj) {
+          if (Array.isArray(obj.value)) {
+            return !obj.value.length;
+          } else {
+            return obj.value === '';
+          }
+        }
+      } else {
+        return false;
       }
     }
   }

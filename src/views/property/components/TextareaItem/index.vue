@@ -6,7 +6,7 @@
       :rows="textareaData.rows||3"
       :label="textareaData.name"
       v-model="textareaData.value"
-      :disabled="textareaData.disabled"
+      :disabled="precondition"
       placeholder="请输入内容"
     ></el-input>
   </div>
@@ -18,7 +18,14 @@ export default {
     textareaData: {
       type: Object,
       require: true,
-    }
+    },
+    precondition: {
+      type: Boolean,
+      require: false,
+      default() {
+        return false;
+      }
+    },
   },
   data() {
     return {

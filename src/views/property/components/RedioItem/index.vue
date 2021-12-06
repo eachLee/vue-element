@@ -5,7 +5,7 @@
       <el-radio
         v-for="option in radioData.options"
         :key="option.value"
-        :disabled="radioData.disabled"
+        :disabled="precondition"
         :label="option.value"
         :value="option.value"
       >{{option.label}}
@@ -20,7 +20,14 @@ export default {
     radioData: {
       type: Object,
       require: true,
-    }
+    },
+    precondition: {
+      type: Boolean,
+      require: false,
+      default() {
+        return false;
+      }
+    },
   },
   data() {
     return {

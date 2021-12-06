@@ -2,15 +2,29 @@ import Mock from 'mockjs';
 const Random = Mock.Random;
 console.log(Random);
 Mock.setup({
-	timeout: '10-300'
-})
+	timeout: '10-1000'
+});
+let typeArr = ['城区', '片区', '楼盘', '栋座', '房号', '房源属性', '楼层', '户型', '朝向', '建筑类型', '交易类型', '排序方式', '房源编号', '产权性质', '房屋用途',];
 let mockData = {
 	formData: Mock.mock('/mock/form-data', 'get', {
 		'formData|10-50': [{
 			'id': '@GUID',
+			'index|+1': 1,
 			'type|1': ['input', 'select', 'radio', 'checkbox'],
-			'name|+1': ['城区', '片区', '楼盘', '栋座', '房号', '房源属性', '楼层', '户型', '朝向', '建筑类型', '交易类型', '排序方式', '房源编号', '产权性质', '房屋用途',],
+			'name|+1': typeArr,
 			'disabled|1-8': true,
+			precondition() {
+				if (this.disabled) {
+					//随机取一个元素用作前置条件
+					let index = this.index;
+					if (this.index > typeArr.length) {
+						index = this.index % typeArr;
+					}
+					if (typeArr[index - 2] !== this.name) {
+						return typeArr[index - 2];
+					}
+				}
+			},
 			value() {
 				if (this.type === 'checkbox') {
 					return [];

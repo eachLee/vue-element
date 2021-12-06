@@ -4,7 +4,7 @@
     <el-input
       :label="inputData.name"
       v-model="inputData.value"
-      :disabled="inputData.disabled"
+      :disabled="precondition"
       placeholder="请输入内容"
     ></el-input>
   </div>
@@ -16,6 +16,13 @@ export default {
     inputData: {
       type: Object,
       require: true,
+    },
+    precondition: {
+      type: Boolean,
+      require: false,
+      default() {
+        return false;
+      }
     }
   },
   data() {
