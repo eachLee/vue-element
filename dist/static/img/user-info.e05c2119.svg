@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="170px" height="110px" viewBox="0 0 170 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>背景@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 170 0 170 110 0 110"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="70.6239443%" id="linearGradient-3">
+            <stop stop-color="#3D7EFF" offset="0%"></stop>
+            <stop stop-color="#6F9FFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#3D7EFF" offset="0%"></stop>
+            <stop stop-color="#6F9FFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="蓝色" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CCHR首页-蓝色" transform="translate(-1130.000000, -50.000000)">
+            <g id="头像浮层备份" transform="translate(1130.000000, 50.000000)">
+                <g id="背景">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="蒙版" fill="#A7C5FF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <path d="M-26.0427444,2.72888902 L43.7018709,45.3190618 C52.806752,50.8790388 55.9448641,62.6065927 50.8334208,71.9706383 L16.0210545,135.746086 C10.7287823,145.441406 -1.42106196,149.010782 -11.1163821,143.71851 C-11.4005645,143.563386 -11.6809383,143.401385 -11.9572556,143.232649 L-81.7018709,100.642477 C-90.806752,95.0824996 -93.9448641,83.3549458 -88.8334208,73.9909001 L-54.0210545,10.2154523 C-48.7287823,0.520132169 -36.578938,-3.04924335 -26.8836179,2.24302893 C-26.5994355,2.39815231 -26.3190617,2.56015342 -26.0427444,2.72888902 Z" id="矩形" fill="url(#linearGradient-3)" opacity="0.252906436" mask="url(#mask-2)"></path>
+                    <ellipse id="椭圆形" fill="url(#linearGradient-4)" opacity="0.252906436" mask="url(#mask-2)" cx="165" cy="39" rx="20" ry="21"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -44,6 +44,7 @@ export const constantRoutes = [
     component: () =>
       import(/* webpackChunkName: "home-group" */ "@/views/login/index")
   },
+  //以上为基础模板不能删除
   {
     path: "/",
     component: Layout,
@@ -90,8 +91,20 @@ export const constantRoutes = [
       }
     ]
   },
-  //以上为基础模板不能删除
-
+  {
+    path: "/property/",
+    name: "PROPERTY",
+    hidden: true,
+    meta: { icon: "home", title: "房源列表", },
+    component: () => import("@/views/property")
+  },
+  {
+    path: "/get-copy/",
+    name: "GET_COPY",
+    hidden: true,
+    meta: { icon: "home", title: "复制处理", },
+    component: () => import("@/views/get-copy")
+  },
 ];
 export const asyncRoutes = [
   // {
@@ -193,7 +206,6 @@ export const asyncRoutes = [
 
 const createRouter = () =>
   new Router({
-    mode: "history",
     scrollBehavior: () => ({ y: 0 }),
     routes: constantRoutes
   });
